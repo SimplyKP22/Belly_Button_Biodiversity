@@ -16,7 +16,8 @@ function init() {
           .property("value", sample);
       
       });
-      
+      // Build the list of datapoints that should be reflected for the first
+      // Test Subject ID No. 
       var metadata = data.metadata;
       var resultsArray = metadata.filter(sampleObj => sampleObj.id == sample);
       var result = resultsArray[0]; 
@@ -47,7 +48,7 @@ function init() {
     Metadata(Sample);
     // Call the new Charts function to update the charts the relavant data for the
     // selected ID No. 
-    newCharts(Sample);
+    // newCharts(Sample);
   }
 
   // Metadata function called in optionChanged
