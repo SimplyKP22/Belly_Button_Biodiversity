@@ -104,7 +104,8 @@ function init() {
       title: "Top 10 Bacteria Cultures Found",
       };
       // Use Plotly to create the barchart and have it rendered 
-      Plotly.newPlot("bar", barTrace, barLayout);
+      // the barTrace needs to be placed in an array
+      Plotly.newPlot("bar", [barTrace], barLayout);
 
       // Create trace information for the bubble chart.
       var bubblechartTrace = {
@@ -126,6 +127,7 @@ function init() {
       };
     
       // Use Plotly to plot the data with the layout.
-      Plotly.newPlot("bubble", bubblechartTrace, bubbleLayout);
+      // the bubblechartTrace needs to be placed in an array
+      Plotly.newPlot("bubble", [bubblechartTrace], bubbleLayout);
     });
   }
